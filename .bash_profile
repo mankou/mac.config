@@ -89,14 +89,14 @@ fi
 
  #设置环境变量
 #BLOG=/Users/mang/AppData/Dropbox/wiki/blog/mankou.github.com
-BLOG=/Users/mang/AppData/快盘/wiki/blog/mankou.github.com/
+#BLOG=/Users/mang/AppData/快盘/wiki/blog/mankou.github.com/
 MACBAT=/Users/mang/work/workData/shell/bat-mac/
+deployShell=/Users/mang/work/workData/shell/deploy-shell
 PATH=$MACBAT:$PATH
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 PATH=$JAVA_HOME/bin:$PATH
 export JAVA_HOME
-
 
 export PATH 
 

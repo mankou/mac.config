@@ -5,6 +5,7 @@ alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
 
 # 自定义的环境变量
 MACBAT=/Users/mang/work/workData/shell/bat-mac/
+deployShell=/Users/mang/work/workData/shell/deploy-shell
 
 # zsh powerline主题设置
 #POWERLINE_HIDE_USER_NAME=true
