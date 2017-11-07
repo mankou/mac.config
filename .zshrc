@@ -8,10 +8,12 @@ MACBAT=/Users/mang/work/workData/shell/bat-mac/
 
 # zsh powerline主题设置
 #POWERLINE_HIDE_USER_NAME=true
+
+# zsh 不显示主机名
 POWERLINE_HIDE_HOST_NAME=true
+
+# zsh 提示符右边显示命令退出码
 POWERLINE_RIGHT_A="exit-status"
-# 如下2个不灵 我本想把当前路径设置的短一些
-#POWERLINE_CUSTOM_CURRENT_PATH="%3~"
 
 #If you want to display ~ instead of your full path:
 POWERLINE_PATH="short"
