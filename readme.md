@@ -1,10 +1,10 @@
 # 说明
-* 用于备份我的重要配置文件的
+* 用于备份我的重要配置文件
 * 可使用下一节的命令备份相关配置文件 然后提交到github
 
 # 相关命令
 ```
-/Users/mang/work/workData/shell/bat-mac/macUse/copyConfigFile.sh
+./copyConfigFile.sh
 git push
 ```
 
