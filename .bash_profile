@@ -6,8 +6,10 @@
 #------------------------------------------------------------------------
 
 # 设置vim别名 mvim -v的意思是在当前容器中打开mvim 否则会在独立的窗口打开
-[ -f /usr/bin/mvim ] && alias vim='mvim -v'
-[ -f /usr/bin/mvim ] && alias vi='mvim -v'
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
+#[ -f /usr/bin/mvim ] && alias vim='mvim -v'
+#[ -f /usr/bin/mvim ] && alias vi='mvim -v'
 
 # 配置git命令别名
 # 注意下面等号右边不能有空格 否则出错
@@ -86,9 +88,23 @@ if brew list | grep coreutils > /dev/null ; then
 fi
 
  #设置环境变量
-BLOG=/Users/mang/AppData/Dropbox/wiki/blog/mankou.github.com
-DROPBOX=/Users/mang/AppData/Dropbox
-MACBAT=/Users/mang/AppData/Dropbox/mac/bat-mac
-PATH=$BLOG:$DROPBOX:$MACBAT:$PATH
+#BLOG=/Users/mang/AppData/Dropbox/wiki/blog/mankou.github.com
+BLOG=/Users/mang/AppData/快盘/wiki/blog/mankou.github.com/
+MACBAT=/Users/mang/work/workData/shell/bat-mac/
+PATH=$MACBAT:$PATH
+
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME
+
+
 export PATH 
 
+
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+
+# modify by m-ning at 2017-06-10
+# 因为我执行sed -n '/2017\/06\/09/,$p' web-catalina.out-20170608 >0609-sed.out 这样的命令报sed : RE error : illegal byte sequence
+export LC_CTYPE=C 
+export LANG=C
