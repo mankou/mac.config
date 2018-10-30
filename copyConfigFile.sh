@@ -4,7 +4,7 @@
 
 DEST=~/.mac.config
 cp ~/.vim/.vimrc  $DEST/
-cp ~/.gvimrc  $DEST/
+cp ~/.vim/.vimrc.basic  $DEST/
 cp ~/.dir_colors  $DEST/
 cp ~/.bash_profile  $DEST/
 cp ~/.zshrc $DEST/

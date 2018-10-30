@@ -1,0 +1,54 @@
+"=======================vim config begin=========================================
+" 打开语法高亮
+syntax enable
+
+" 配色方案
+colorscheme desert
+
+" 字体、字号
+set guifont=Courier\ New:h20
+
+"显示行号	
+set nu
+
+"突出显示当前行
+"set cursorline 
+
+"搜索时智能忽略大小写。即如果搜索词全是小写，则忽略大小写，如果有一个大写则大小写敏感
+set ignorecase smartcase
+
+"渐近式匹配incremental search 即搜索时 会自动把光标定位到匹配处"
+set incsearch
+
+"高亮显示搜索到字符
+"set nohlsearch
+set hlsearch
+
+"按下esc键后取消搜索高亮
+nnoremap <esc> : noh<return><esc>
+
+"设置tab键宽度
+set tabstop=4
+" 设置tab替换为空格
+set expandtab
+
+"设置每层缩进数
+set shiftwidth=4
+
+
+"这个选项可以让你设定在上下移动光标时, 当光标到达屏幕顶行或底行时 光标的上方或下方至少会保留显示的行数
+set scrolloff=3
+
+
+"设置命令行的行数"
+set cmdheight=2 
+
+"设置状态栏
+set statusline=%f\ [ft=%Y]\ %{\"[fe=\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\"+\":\"\").\"]\"}\ [ff=%{&ff}]\ [asc=%03.3b]\ [hex=%02.2B]\ [pos=%l,%v][%p%%]\ [le=%L]
+
+" 设置状态栏是否显示. 0表示不显式状态行. 1表示仅当窗口多于一个时显示状态行 2表示总是显式状态行
+set laststatus=2
+
+" 屏幕右下角显示未完成的指令输入
+set showcmd
+

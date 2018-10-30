@@ -98,13 +98,33 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 PATH=$JAVA_HOME/bin:$PATH
 export JAVA_HOME
 
+GRADLE_HOME=/Users/mang/work/workToolsMac/gradle-4.7
+PATH=$GRADLE_HOME/bin:$PATH
 export PATH 
+
+MYSQL_HOME=/usr/local/mysql
+PATH=$MYSQL_HOME/bin:$PATH
+
+ZK_HOME=/Users/mang/work/workToolsMac/zookeeper-3.5.4-beta
+PATH=$ZK_HOME/bin:$PATH
+
+MAVEN_HOME=/Users/mang/work/workToolsMac/apache-maven-3.3.3
+PATH=$MAVEN_HOME/bin:$PATH
 
 
 #test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 
 # modify by m-ning at 2017-06-10
+# 但是加上该配置 则在iterm命令行中输入不了中文,但是显示中文没有问题(如有文件是中文名或者在vim中查看文件文件里有中文内容)
 # 因为我执行sed -n '/2017\/06\/09/,$p' web-catalina.out-20170608 >0609-sed.out 这样的命令报sed : RE error : illegal byte sequence
-export LC_CTYPE=C 
-export LANG=C
+#export LC_CTYPE=C 
+#export LANG=C
+
+# homebrew 二进制镜像
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
+
+
+# autojump 执行报错
+#[[ -s $(brew --prefix)/etc/profile.d/[autojump.sh](http://autojump.sh/) ]] && . $(brew --prefix)/etc/profile.d/[autojump.sh](http://autojump.sh/)
+[ -s $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh
